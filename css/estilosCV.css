@@ -41,8 +41,7 @@ img{
     border: solid 2px #000000;
     object-fit: cover; 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
-    
+    background-color: #F8F9FA;
 }
 
 .Contacto{
