@@ -16,15 +16,15 @@ main{
     /* height: 100%; */
     width: 60%;
     background-color: #F8F9FA;
-
+    padding: 2em;
 }
 
 aside{
-    background-color: blue;
+    background-color: #092439;
     margin: 0;
     width: 40%;
     height: 100%;
-    color: white;
+    color: #f9fafa;
 
 }
 
@@ -36,13 +36,15 @@ aside{
     width: 100%;
     display: grid;
     place-items: center;
+    gap: 1rem;
     .foto{
-        height: 100px;
-        width: 100px;
+        height: 180px;
+        width: 180px;
         border-radius: 50%;
+        border: solid 2px #000000;
         margin-top: 1rem;
         overflow: hidden; 
-        box-shadow: 1px 1px 30px grey;
+        box-shadow: -30px 1px 80px 5px #79ebd5, 30px 10px 70px 3px #092439, 0px 50px 80px 5px #4d4eaf,  5px -30px 80px 5px #4d4eaf ;
         /* esto es para que la imagen no se salga del circulo */
         img{
             width: 100%;
@@ -54,17 +56,54 @@ aside{
 
     .datos{
         text-align: center;
+        p{
+            font-size: 30px;
+        }
+        h1{
+            font-size: 40px;
+            color: #22324b;
+        
+        }
     }
+
+    
 }
 
 
+.experienciaUno{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    
 
+    .nombreTrabajo{
+        font-size: 30px;
+    }
+    .fechaTrabajo{
+        background-color: #092439;
+        padding: 10px;
+        border-radius: 15px;
+        border: solid 2px #000000 ;
+        color: #ffffff;
+    }
+    .datosTrabajo{
+        padding: 2em;
+    }
+    .nombreCompania{
+        display: flex;
+        justify-content: space-between;
+        h4{
+            color: #092439;
+        }
+    }
+}
 
 .datosPersonales{
     width: 100%;
-    background-color: aqua;
+    background-color: #79ebd5;
     padding: 2em;
     color: black;
+    text-align: center;
     ul.listaDP{
         margin-top: 1em;
         display: flex;
@@ -81,7 +120,7 @@ aside{
     text-align: center;
     width: 100%;
     height: 150px;
-    background-color: chocolate;
+    /* background-color: chocolate; */
     padding: 2em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -92,9 +131,34 @@ aside{
 
 .educacion{
     width: 100%;
-    background-color: rgb(0, 22, 83);
+    /* background-color: rgb(0, 22, 83); */
     padding: 2em;
 }
+.lenguas{
+    width: 100%;
+    padding: 2em;
+
+    .contenedorIdioma {
+        display: flex;
+        justify-content: center;
+        gap: 2em; 
+        padding: 2em;
+    }
+    
+    .circulo {
+        width: 20px;  
+        height: 20px; 
+        border-radius: 50%; 
+        background-color: #092439; 
+        border: solid 1px lightgray;
+    }
+    
+    .pintado {
+        background-color: lightgray; 
+    }
+}
+
+
 
 
 
