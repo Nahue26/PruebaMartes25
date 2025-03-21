@@ -1,3 +1,6 @@
+
+/* flexbox froggy */
+
 * { 
     margin: 0;
     padding: 0;
@@ -14,7 +17,7 @@ body{
 }
 main{
     /* height: 100%; */
-    width: 60%;
+    width: 65%;
     background-color: #F8F9FA;
     padding: 2em;
 }
@@ -22,8 +25,8 @@ main{
 aside{
     background-color: #092439;
     margin: 0;
-    width: 40%;
-    height: 100%;
+    width: 35%;
+    /* height: 100%; */
     color: #f9fafa;
 
 }
@@ -69,6 +72,12 @@ aside{
     
 }
 
+
+.datos_perfil{
+    h2{
+        color: #092439;
+    }
+}
 
 .experienciaUno{
     display: flex;
@@ -124,6 +133,10 @@ aside{
     padding: 2em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    i{
+        font-size: 1.5em;
+    }
     
 
 }
@@ -134,6 +147,7 @@ aside{
     /* background-color: rgb(0, 22, 83); */
     padding: 2em;
 }
+
 .lenguas{
     width: 100%;
     padding: 2em;
@@ -162,126 +176,46 @@ aside{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-main {
+.contenedorFlexbox{
     display: flex;
-    height: calc(100vh - 2rem);
-    margin: 1rem;
-}
-
-main p{
-    font-size: 20px;
-}
-
-
-aside{
-    background-color: #dff1ff;
-    display: flex;
-    flex-direction: column;
-    width: 20%;
+    flex-direction: row; /*por defecto esto siempre esta en row */
+    background-color: #4d4eaf;
+    /*Cuando de un elemento se devorda de su elemento padre aparece la barra para deslizar de forma horizontal*/
+    overflow-x: auto;
+    gap: 10px;/*espacio entre elementos(no cuenta los costados)*/
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    border: solid 2px #000000;
-    gap: 2rem;
-    border-radius: 40px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    height: 500px;
 }
 
-img{
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin: 20px;
-    border: solid 2px #000000;
-    object-fit: cover; 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    background-color: #F8F9FA;
+.tarjeta{
+    height: 400px;
+    flex: 0 0 100px;/*primre parametro abilita para que se expanda, el segundo parametro es para que no se encoja, y el ultimo parametro es el flex-basis*/
+    /* flex-basis: 100px;para que ocupe todo el ancho, este esta relacionado a la direccion, ya sea en el eje x o eje y */
+    background-color: rgb(24, 114, 114);
+    color: #ffffff;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0 0 10px 0 rgb(0,0,0,0.5);
 }
 
-.Contacto{
-    background-color: #a5d8ff;
-    padding: 5px;
-    width: 100%;
-    border: solid 2px #000000;
-    border-radius: 15px;
+.tarjeta:hover{
+    transform: scale(.95);
 }
 
-.contenedor{
-    margin: 20px;
-    width: 80%;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
+.tarjeta:nth-child(2){
+    background-color: #a33434;
 }
 
-.nombre{
-    border: solid 2px #000000;
-    background-color: #a5d8ff;
-    border-radius: 40px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
-}
-.habilidades p{
-    padding: 10px;
-}
-.habilidades h2{
-    background-color: #a5d8ff;
-    padding: 5px;
-    width: 100%;
-    border: solid 2px #000000;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
- 
+.tarjetaTitulo{
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.estudios p{
-    padding: 10px;
+.tarjetaContenido{
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1em;
+    border-radius: 1em;
 }
-.estudios h2{
-    background-color: #a5d8ff;
-    padding: 5px;
-    width: 100%;
-    border: solid 2px #000000;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.titulo{
-    font-size: 50px;   
-} */
