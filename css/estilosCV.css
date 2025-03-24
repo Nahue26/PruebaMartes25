@@ -8,12 +8,17 @@
     font-family: 'Patrick Hand', sans-serif;
 }
 
+
+
+
 body{
     background-color: green;
     /* height: 100vh;
     width: 100vw;  */
     /* Utilizar solamente estas unidades en el body */
     display: flex;
+    height: 100%;
+    min-height: 100vh;
 }
 main{
     /* height: 100%; */
@@ -47,7 +52,7 @@ aside{
         border: solid 2px #000000;
         margin-top: 1rem;
         overflow: hidden; 
-        box-shadow: -30px 1px 80px 5px #79ebd5, 30px 10px 70px 3px #092439, 0px 50px 80px 5px #4d4eaf,  5px -30px 80px 5px #4d4eaf ;
+        box-shadow: -30px 1px 80px 5px #79ebd5, 30px 15px 80px 3px #092439, -10px 20px 80px 5px #4d4eaf,  5px -30px 80px 5px #4d4eaf ;
         /* esto es para que la imagen no se salga del circulo */
         img{
             width: 100%;
