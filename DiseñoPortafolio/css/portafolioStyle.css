@@ -1,5 +1,8 @@
 @import url(../../assets/css/tipografia.css);
 
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
