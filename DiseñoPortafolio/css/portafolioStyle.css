@@ -12,8 +12,10 @@ body{
 
 header{
     /* background-color: #2A2A40 ; */
-    text-align: center;
-    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
 
 main{
@@ -32,9 +34,74 @@ main{
     }
 
     .bienvenida{
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-around;
+        padding: 1em;
+        
+        
         p{
+            
+            display: flex;
+            flex-direction: row;
+           
+            /* height: 100%; */
             text-align: center;
+            align-items: center;
+            
             font-size: 20px;
+        }
+
+        .texto_bienvenida{
+            /* background-color: #E6AC00; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            gap: 1em;
+            
+            
+
+            .tam-hola{
+                font-size: 30px;
+                font-weight: bolder ;
+            }
+            .tam-bienvenida{
+                font-size: 30px;
+                font-weight: normal;
+            }
+
+
+            a{
+                text-decoration: none;
+
+                button{
+                    border: none;
+                    
+                    
+                }
+            }
+
+        }
+
+        .imagen_bienvenida{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #3A3A50;
+            display: grid;
+            place-items: center;
+            box-shadow: 0 0 30px 5px #505050;
+
+            
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
     
@@ -106,4 +173,5 @@ footer{
 
 .btn:hover {
     background-color: #E6AC00;
+    transform: scale(0.98);
 }
