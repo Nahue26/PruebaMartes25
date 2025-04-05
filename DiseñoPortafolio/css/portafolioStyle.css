@@ -34,6 +34,9 @@ header{
 main{
     /* background-color: #1E1E2E; */
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 
 
     .contenedor_tarjetas{
@@ -206,6 +209,11 @@ footer{
 
 
 @media (max-width:804px){
+
+    .pantalla_inicial {
+        height: auto !important;
+    }
+    
  
     .bienvenida{
         display: flex;
