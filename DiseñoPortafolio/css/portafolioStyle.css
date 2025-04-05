@@ -11,6 +11,7 @@ html{
 body{
     background: radial-gradient(circle, #393955, #161625);
     color: #FFFFFF;
+    background-attachment: fixed;
 }
 
 header{
@@ -19,6 +20,15 @@ header{
     justify-content: center;
     align-items: center;
     padding: 2em;
+
+    h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    .spanNahuel{
+        font-weight: bolder;
+        color: #FFD700;
+    }
 }
 
 main{
@@ -36,11 +46,17 @@ main{
         
     }
 
+    .pantalla_inicial{
+        height: 100vh;
+    }
+
     .bienvenida{
         /* background-color: aqua; */
+        
         display: flex;
         justify-content: space-around;
         padding: 1em;
+        align-items: center;
         
         
         p{
@@ -63,6 +79,7 @@ main{
             align-items: center;
             width: 40%;
             gap: 1em;
+            height: 50vh;
             
             
 
@@ -71,8 +88,14 @@ main{
                 font-weight: bolder ;
             }
             .tam-bienvenida{
+                display: inline;
                 font-size: 30px;
                 font-weight: normal;
+
+                .spanNahuel{
+                    font-weight: bolder;
+                    color: #FFD700;
+                }
             }
 
 
@@ -97,6 +120,7 @@ main{
             display: grid;
             place-items: center;
             box-shadow: 0 0 30px 5px #505050;
+            align-items: center;
 
             
 
@@ -178,4 +202,25 @@ footer{
 .btn:hover {
     background-color: #E6AC00;
     transform: scale(0.98);
+}
+
+
+@media (max-width:804px){
+ 
+    .bienvenida{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+
+        .texto_bienvenida{
+            width: 80%!important;
+           
+        }
+
+        .imagen_bienvenida{
+            width: 300px!important;
+            height: 300px!important;
+        }
+    }
 }
