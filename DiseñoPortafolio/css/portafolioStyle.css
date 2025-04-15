@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    /* background-color: #2A2A40 ; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,19 +31,40 @@ header{
     }
 }
 
+@keyframes deslizar {
+    from {
+      transform: translateX(100%); 
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }
+
 main{
-    /* background-color: #1E1E2E; */
     padding: 1em;
     display: flex;
     flex-direction: column;
     gap: 2em;
-
+    
 
     .contenedor_tarjetas{
         display: flex; 
         justify-content: center;
         flex-wrap: wrap;   
         gap: 2em;
+       
+        
+        view-timeline-name: --reveal;
+
+        animation-name: deslizar;
+        animation-fill-mode: both;
+
+        animation-timeline: --reveal;
+        animation-range: entry 25% cover 25%;
+
+
 
 
         
