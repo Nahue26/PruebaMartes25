@@ -1,0 +1,115 @@
+@import url(../../assets/css/tipografia.css);
+@import url(assets/colores.css);
+@import url(assets/styleBasic.css);
+
+body{
+    background-color: var(--bg-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+   
+    
+    a{
+        text-decoration: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5em;
+        height: 80%;
+        padding-top: 6em;
+
+        header{
+            h1{
+                font-size: 64px;
+                color: var(--txt-grey);
+            }
+        }
+
+
+
+
+
+        .registro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1em;
+
+
+            .registrarte{
+                color: var(--txt-grey);
+                .redireccion_logeate{
+                    color: var(--bg-button);
+                }
+            }
+
+
+            .registro_input{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+    
+    
+                .input_usuario, .input_contrasenia, .btn_submit{
+                    padding: 1em;
+                    text-align: center;
+                    border-radius: 10px;
+                    border: none;
+                    font-weight: normal;
+                    
+                }
+                
+                .input_usuario::placeholder,
+                .input_contrasenia::placeholder {
+                    font-family: "josefin-sans";
+                    color: var(--txt-grey); 
+                    font-size: 20px;
+                }
+                
+                .input_usuario, .input_contrasenia{
+                    border: 1px solid #B6B7B6;
+                }
+
+                .input_usuario:focus, .input_contrasenia:focus{
+                    outline: none;
+                    border: 1px solid var(--bg-button-hover);
+                }
+
+                .btn_submit{
+                    background-color: #4449EB;
+                    border: 1px solid #3136D5;
+                    color: #FFFFFF;
+                    font-size: 14px;;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                    
+                }
+
+                .btn_submit:hover{
+                    background-color: #3136D5;
+                    transform: scale(1.05);
+                }
+                
+            }
+
+
+
+
+
+        }
+
+
+
+        
+        
+        
+        
+    }
+
+}

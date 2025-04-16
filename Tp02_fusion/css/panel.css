@@ -1,0 +1,157 @@
+@import url(../../assets/css/tipografia.css);
+@import url(assets/colores.css);
+@import url(assets/styleBasic.css);
+
+
+body{
+    background-color: green;
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style:none;
+    }
+    
+}
+
+navbar::-webkit-scrollbar{
+    display: none;
+}
+navbar{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    overflow-x: scroll;
+    
+    
+
+    
+    ul{        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style:none;
+        gap: 2em;
+        li{
+            a{
+                color: black;
+                text-decoration: none;
+                
+            }
+        }
+        
+       
+    
+    }
+
+
+}
+
+main{
+    .contenedor_tarjetas{
+        background-color: beige;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+
+
+        .tarjeta{
+            display: flex;
+            flex-direction: row;
+            background-color: yellow;
+            width: 300px;
+            border-radius: 10px;
+            padding: 1em;
+            align-items: center;
+
+            .imagen{
+                width: 120px;
+                height: 120px;
+                background-color: red;
+                overflow: hidden;
+                border-radius: 10px;
+
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                    
+                }
+             
+            }
+
+            .datos_produto{
+                background-color: cadetblue;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .nombres, .datos_numeros{
+                    background-color: blueviolet;
+                    text-align: center;
+                    
+
+                }
+
+                .nombres{
+                    text-align: start;
+                    .titulo{
+                        
+                        font-size: 25px;
+                        font-weight: bold;
+                        color: var(--txt-titulo-carta);
+
+                    }
+                    .subtitulo{
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: var(--txt-subtitulo-carta);
+                    }
+                }
+
+                .datos_numeros{
+                    background-color: aquamarine;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .puntuacion{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: blue;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                
+            }
+
+
+
+        
+
+        }
+    }
+}
+

@@ -1,0 +1,14 @@
+@import url(../../assets/css/tipografia.css);
+@import url(assets/colores.css);
+@import url(assets/styleBasic.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html, body {
+    height: 100%;
+}
+
