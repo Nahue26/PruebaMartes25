@@ -81,12 +81,16 @@ navbar{
 
 
 }
-
-main{
-
+@media (max-width:680px){
     .contenedor_tarjetas a:nth-child(even) .imagen {
         order: 1;
     }
+    
+   
+}
+
+main{
+
     
 
     .contenedor_tarjetas{
