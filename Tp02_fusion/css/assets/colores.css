@@ -1,5 +1,17 @@
 :root{
   --bg-body: #FFFFFF;
+  --bg-header: #FFFFFF;
+  --bg-main: #FFFFFF;
+
+  --bg--tarjeta: #FFFFFF;
+  --st-tarjeta: #B6B7B6;
+  --txt-precio: #545488;
+
+  
+  
+  --bg-nav: #FFFFFF;
+  --txt-nav: #474747;
+
   --txt-grey: #8A8797;
   
 
@@ -10,6 +22,8 @@
 
   --txt-titulo-carta: #7A7A7C;
   --txt-subtitulo-carta: #B6B7B6;
+
+  --bg-icon: #8A8797;
 
   
 
