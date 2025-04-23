@@ -47,6 +47,7 @@ header{
 navbar::-webkit-scrollbar{
     display: none;
 }
+
 navbar{
     background-color: var(--bg-nav);
     display: flex;
@@ -89,6 +90,8 @@ navbar{
    
 }
 
+
+
 main{
 
     
@@ -101,6 +104,9 @@ main{
         gap: 1em;
         padding: 1em;
 
+        .tarjeta:hover{
+            transform: scale(0.99);
+        }
 
         .tarjeta{
             display: flex;
@@ -112,6 +118,9 @@ main{
             align-items: center;
             gap: 1em; 
             box-shadow: 3px 3px 7px var(--bg-icon);
+            transition: transform 0.3s ease;
+
+            
 
             .imagen{
                 width: 120px;

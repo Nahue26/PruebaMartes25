@@ -22,6 +22,7 @@ body{
         justify-content: flex-start;
         gap: 5em;
         height: 80%;
+        width: 50%;
         padding-top: 6em;
 
         header{
@@ -40,9 +41,13 @@ body{
             flex-direction: column;
             justify-content: center;
             gap: 1em;
+            width: 100%;
 
 
             .registrarte{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 color: var(--txt-grey);
                 .redireccion_logeate{
                     color: var(--bg-button);
@@ -55,6 +60,7 @@ body{
                 flex-direction: column;
                 gap: 10px;
                 justify-content: center;
+                width: 100%;
     
     
                 .input_usuario, .input_contrasenia, .btn_submit{
@@ -63,6 +69,7 @@ body{
                     border-radius: 10px;
                     border: none;
                     font-weight: normal;
+                    width: 100%;
                     
                 }
                 
@@ -112,4 +119,14 @@ body{
         
     }
 
+}
+
+
+@media (max-width:558px){
+    main{
+        width: 90%;
+    }
+    
+    
+   
 }
