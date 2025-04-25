@@ -3,35 +3,198 @@
 @import url(assets/colores.css);
 @import url(assets/styleBasic.css);
 
-header{
-    background-color: var(--bg-header);
-    position: fixed;
+i{
+    color: var(--bg-icon);
+}
+button{
+    border: none;
+}
+
+body{
+    height: 100vh;
     width: 100%;
-    top: 0;
-    height: 60px;
+    /* background-color: aqua; */
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px;
-    box-shadow: 0 2px 10px var(--bg-icon);
-
-    h2{
-        color: var(--txt-grey);
-    }
-    
-    .acciones{
-        display: flex;
-        gap: 1em;
-    }
+    flex-direction: column;
 
 
-    ul{
+
+    header{
+        background-color: var(--bg-header);
+        /* position: fixed; */
+        width: 100%;
+        top: 0;
+        height: 60px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        list-style:none;
+        padding: 18px;
+        box-shadow: 0 2px 10px var(--bg-icon);
+    
+        h2{
+            color: var(--txt-grey);
+        }
+        
+        .acciones{
+            display: flex;
+            gap: 1em;
+        }
+    
+    
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            list-style:none;
+        }
+        
+    }
+
+
+    main{
+        /* background-color: green; */
+        width: 100%;
+        height: auto;
+        padding: 1em;
+    
+    
+    
+    
+        article{
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .header{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                gap: 2em;
+
+
+
+                .volver{
+                    font-size: 1.5em;
+                }
+
+
+
+                .titulo{
+                    /* background-color: rgb(238, 255, 0); */
+
+
+                    .nombre_producto{
+                        text-align: center;
+                        font-size: 1.6em;
+                        color: var(--txt-titulo-carta);
+                    }
+                    .subtitulo_producto{
+                        text-align: center;
+                        font-size: 0.9em!important;
+                        color: var(--txt-subtitulo-carta);
+                    }
+                }
+            }
+
+            .caja_datos{
+                /* background-color: brown; */
+                display: flex;
+                flex-direction: column;
+                padding: 1em;
+
+                
+                .imagen{
+                    width: 300px;
+                    height: 300px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                
+                
+                
+                .precio_puntuacion{
+                    /* background-color: chocolate; */
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2em;
+                    padding: 1em;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    
+                    
+                    .puntuacion{
+                        background-color: var(--bg-button);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        box-shadow: 3px 3px 7px #d1d1d1;
+                        
+                        
+                    }
+                }
+                
+                .info_producto{
+                    /* background-color: rgb(206, 206, 206); */
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1em;
+                    gap: 0.5em;
+                    
+                    .color, .talle, .cantidad{
+                        padding: 1em;
+                        border: solid 1px #B6B7B6;
+                        border-radius: 10px;
+                        box-shadow: 3px 3px 5px #B6B7B6;
+                }
+                
+            }
+            
+            .btn_agregarCarrito{
+                padding: 1em;
+                background-color: var(--bg-button);
+                color: var(--txt-button);
+                border-radius: 10px;
+                border: none;
+                
+            }
+            
+        }
+        }
     }
     
 }
+
+
+
+@media (max-width:347px) {
+    .imagen{
+        width: 180px!important;
+        height: 180px!important;
+    }
+
+
+    .nombre_producto{
+        font-size: 1.2em;
+    }
+    .subtitulo_producto{
+        font-size: 0.8em;
+    }
+
+}
+
+
