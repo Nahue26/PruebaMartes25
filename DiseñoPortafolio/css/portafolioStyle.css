@@ -32,7 +32,7 @@ header{
     }
 }
 
-@keyframes deslizar {
+/* @keyframes deslizar {
     from {
       transform: translateX(20%); 
       opacity: 0;
@@ -41,13 +41,15 @@ header{
       transform: translateX(0); 
       opacity: 1;
     }
-  }
+  } */
 
 main{
     padding: 1em;
     display: flex;
     flex-direction: column;
     gap: 2em;
+
+   
     
 
     .contenedor_tarjetas{
@@ -161,6 +163,7 @@ main{
     
     h2{
             text-align: center;
+
         }
 
     hr {
