@@ -1,0 +1,35 @@
+@import url(../../assets/css/mainStyle.css);
+
+img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: auto;          
+  white-space: nowrap;      
+  scroll-behavior: smooth;   
+  -webkit-overflow-scrolling: touch; 
+
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .icono_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+    width: 100px;
+    color: #bebebe;
+    flex-shrink: 0; 
+
+    i {
+      font-size: 2em;
+    }
+  }
+}
