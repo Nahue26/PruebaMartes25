@@ -1,0 +1,9 @@
+:root {
+  --color-principal: #00c8b0;
+  --color-secundario: #ffffff;
+  --color-texto: #212121;
+  --color-subtexto: #949494;
+  --color-estrellas: #00c8b0;
+  --radio-borde: 10px;
+  --sombra: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
