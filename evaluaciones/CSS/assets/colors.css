@@ -1,9 +1,9 @@
 :root{
-  --bg-body: #FDFDFD;
+  --bg-body: #F8F8F8;
 
   --bg-blanco: #FFFFFF;
   
-  
+  --bg-sombra: rgb(219, 219, 219);
 
   --txt-celeste: #4392F9;
   --txt-gris-oscuro: #323232;
