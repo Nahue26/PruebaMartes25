@@ -45,8 +45,8 @@ body{
             }
 
             .perfil{
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 border-radius: 50%;
                 overflow: hidden;
                 img{
@@ -63,6 +63,7 @@ body{
     main{
         display: flex;
         flex-direction: column;
+        
         
                 
         height: auto;
@@ -111,6 +112,7 @@ body{
                         background-color: var(--bg-blanco);
                         padding: 4px 10px;
                         border-radius: 7px;
+                        font-size: 14px;
                         color: var(--txt-negro);
                         box-shadow: 1px 1px 1px var(--bg-sombra);
                     }
@@ -122,6 +124,7 @@ body{
                 overflow-x: scroll;
                 display: flex;
                 gap: 1em;
+                scrollbar-width: none;
                 
                 
 
@@ -205,6 +208,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            
             .descuento{
                 display: inline-block;
                 font-weight: lighter;
@@ -250,7 +254,9 @@ body{
 
         .contenedor_productos{
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            scrollbar-width: none; 
             justify-content: center;
             gap: 1em;
             margin: 10px;
@@ -300,6 +306,7 @@ body{
             align-items: center;
             width: 100%;
             justify-content: center;
+            margin-top: 10px;
             .oferta{
                 background-color: #ffffff;
                 border-radius: 10px;
@@ -318,6 +325,138 @@ body{
 
         }
         
+
+        .tacones{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .tarjeta_tacones{
+                    position: relative;
+
+                margin-top: 10px;
+                display: flex;
+                height: 200px;
+                background-color: #ffffff;
+
+                img{
+                    width: 40%;
+
+                }
+
+                .contenido_tacones{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    text-align: end;
+                    justify-content: center;
+                    padding: 5px 20px;
+                    color: var(--txt-gris-oscuro);
+                    gap: 4px;
+                    button{
+                        border: none;
+                        background-color: #F83758;
+                        color: #ffffff;
+                        padding: 5px 15px;
+                        border-radius: 5px;
+
+                    }
+                }
+            }
+
+            .foto_tacones{
+                position: absolute;
+                width: 30px;
+                height: auto;
+                top: 50px;
+                left: 30px;
+            }
+            
+        }
+
+
+        .contenedor_tendencia{
+            display: flex;
+            justify-content: center;
+            .tendencia{
+                background-color: #FD6E87;
+                color: #ffffff;
+                margin-top: 10px;
+                border-radius: 5px;
+                display: flex;
+                padding: 5px 15px;
+                gap: 1em;
+
+                .contenido_tendencia{
+                    font-weight: lighter;
+                }
+
+                button{
+                    border: solid 1px #ffffff;
+                    background-color: transparent;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+
+                }
+
+            }
+        }
+
+
+        footer{
+            box-shadow: 1px 1px 10px var(--bg-sombra);
+            position: fixed;
+            background-color: var(--bg-blanco);
+            width: 100%;
+            z-index: 999;
+            bottom: 0;
+            nav{
+                display: flex;
+                gap: 1em;
+                justify-content: space-around;
+                position: relative;
+
+                .shop{
+                    background-color: var(--bg-blanco);
+                    box-shadow: 1px 1px 1px var(--bg-sombra);
+                    position: absolute;
+                    
+                    padding: 15px;
+                    border-radius: 50%;
+                }
+
+                .footer_fondo{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-around;
+                    .contenedor_navFooter{
+                        padding: 20px 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 1em;
+                        justify-content: space-evenly;
+
+                        i{
+                            font-size: 18px;
+                        }
+                        .contenedor_navFooter:hover{
+                            color: red;
+                        }
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+
+                }
+
+                
+                
+
+            }
+            
+        }
 
         
         
